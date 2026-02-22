@@ -66,3 +66,35 @@ This document provides details on testing various services after running the `do
 2. Once the services are running, use the above endpoints to verify the functionality.
 
 Happy testing!
+
+
+## Folder Structure
+
+Microservices-Task/
+├── Microservices/
+│   ├── user-service/
+│   │   └── Dockerfile
+│   ├── product-service/
+│   │   └── Dockerfile
+│   ├── order-service/
+│   │   └── Dockerfile
+│   ├── gateway-service/
+│   │   └── Dockerfile
+│   └── docker-compose.yml
+└── README.md
+## ## Services Used in This Project
+User Service | 3000 | Provides user data |
+| Product Service | 3001 | Provides product data |
+| Order Service | 3002 | Provides order data |
+| Gateway Service | 3003 | Routes requests to backend services |
+
+## Step 1: Understanding the Code Structure
+
+- Each service is a separate Node.js application
+- Each service contains:
+  - `package.json`
+  - An entry file such as `app.js`
+- Ports are predefined in the application code
+
+  
+
